@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+ <html lang="en">
+
+ <head>
+     <title>Registro</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style2.css">
+     <script type="text/javascript" src="js/Validar.js"></script>
+     <script type="text/javascript" src="js/jsencrypt.min.js"></script>
+    
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+     </body>
+ </head>
+
+ <body>
+     <section>
+         <br>
+         <div class="container">
+             <div class="titulo">
+                <br>
+                <br>
+                 <img src="img/logo.2.png"  width="100%" height=auto>
+             </div>
+
+             <div class="Inicio">
+                 <div class="container">
+                     <br>
+                     <font size="6%">Registrate!</font>
+                     <br>
+                     <br>
+                     <form class="was-validated"  method="post" id="registroRegistroso">
+
+                         <div class="row align-items-center">
+                             <label for="nombre" class="col-form-label col-md-4"><font size="2%">Nombre(s)</font></label>
+                             <div class="col-md-6">
+                                 <input type="text" name="nom_alu" value="" id="nom_alu" class="form-control is-invalid cypher" required>
+                             </div>
+                         </div>
+                         <br>
+                         <div class="row align-items-center">
+                             <label for="app" class="col-form-label col-md-4"><font size="2%">Apellido paterno</font></label>
+                             <div class="col-md-6">
+                                 <input type="text" name="appat_alu" value="" id="appat_alu" class="form-control is-invalid cypher" required>
+                             </div>
+                         </div>
+                         <br>
+                         <div class="row  align-items-center">
+                             <label for="apm" class="col-form-label col-md-4"><font size="2%">Apellido materno</font></label>
+                             <div class="col-md-6">
+                                 <input type="text" name="apmat_alu" value="" id="apmat_alu" class="form-control is-invalid cypher" required>
+                             </div>
+                         </div>
+                         <br>
+                         <div class="row  align-items-center">
+                             <label for="usuario" class="col-form-label col-md-4"><font size="2%">Usuario</font></label>
+                             <div class="col-md-6">
+                                 <input type="text" name="usrn_alu" value="" id="usrn_alu" class="form-control is-invalid" required>
+                             </div>
+                         </div>
+                         <br>
+                         <div class="row align-items-center">
+                             <label for="fecha" class="col-form-label col-md-4"><font size="2%">Fecha de Nacimiento</font></label>
+                             <div class="col-md-6">
+                                 <input type="date" name="fec_alu" value="" id="fec_alu" class="form-control is-invalid" required min="1920-01-01" max="2015-12-31">
+                             </div>
+                         </div>
+                         <br>
+                         <div class="row  align-items-center">
+                             <label for="contraseña" class="col-form-label col-md-4"><font size="2%">Contraseña</font></label>
+                             <div class="col-md-6">
+                                 <input type="password" name="cont_alu" value="" id="cont_alu" class="form-control is-invalid password cypher" required>
+                             </div>
+                         </div>
+                         <br>
+                         <div class="row  align-items-center">
+                             <label for="contraseña<" class="col-form-label col-md-4"><font size="2%">Contraseña</font></label>
+                             <div class="col-md-6">
+                                 <input type="password" name="contraseña2" value="" id="contraseña2" class="form-control is-invalid password cypher" required>
+                             </div>
+                         </div>
+                         <br>
+                         <div class="row  align-items-center">
+                             <label for="grupo" class="col-form-label col-md-4"><font size="2%">Personaje</font></label>
+                             <div class="col-md-6">
+                                 <select class="form-control is-invalid" name="tipo" required>
+                                     <option value="Cuintli">Cuintli</option>
+                                     <option value="Mixi">Mixi</option>
+
+                                 </select>
+                             </div>
+                         </div>
+                         <br>
+                         <input onclick="registro()" type="submit" id="ingresar" class="boton" value="Registrar">
+                         <br>
+                         <br>
+                         <a href="index.html"><b><font size="2%">Inicia Sesion!</font></b></a>
+                         <br>
+                         <br>
+                     </form>
+                 </div>
+             </div>
+         </div>
+
+         <div class="box">
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+         </div>
+
+
+
+     </section>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+ </body>
+
+ </html>

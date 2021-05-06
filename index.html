@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <title>Iniciar Sesion</title>
+
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/Validar.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script type="text/javascript" src="js/jsencrypt.min.js"></script>
+    <script type="text/javascript" src="js/Cifrar.js"></script>
+</head>
+
+<body>
+    <section>
+        <br>
+        <br>
+        <br>
+        <br>	
+        <div class="container">
+            <div class="titulo">
+            	<br>
+            	<br>
+            	<br>
+                <img src="img/logo.2.png"  width="100%" height=auto>
+            </div>
+            <div class="Inicio">
+                <br>
+                <font size="6%">Iniciar Sesion</font>
+                <br>
+                <br>
+                <form class="was-validated" action="#"  method="POST">
+                    <div class="row form-group">
+                        <label for="usuario" class="col-form-label col-md-3"><font size="2%">Usuario</font></label>
+                        <div class="col-md-7">
+                            <input type="text" name="usrn" value="" id="usuario" class="form-control is-invalid" required="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row form-group">
+                        <label for="contra" class="col-form-label col-md-3"><font size="2%">Contraseña</font></label>
+                        <div class="col-md-7">
+                            <input type="password" name="cont" value="" id="contra" class="form-control is-invalid password cypher" required="">
+                        </div>
+                    </div>
+                    <br>
+
+                    <br>
+
+                    <br>
+                    <input type="submit" id="ingresar" class="boton" value="Iniciar Sesion" onclick="location.href = 'Principal.html'">
+                    <br>
+                    <br>
+                    <br>
+                    <a href="RegistrarA.html"><b><font size="2%">Registrate como Alumno!</font></b></a>
+                    <br>
+                    <br>
+                    <a href="RegistrarP.html"><b><font size="2%">Registrate como Profesor!</font></b></a>
+                    <br>
+                </form>
+            </div>
+        </div>
+
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
+
+    </section>
+</body>
+
+</html>

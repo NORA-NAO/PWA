@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+    <head>
+        <title>Principal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style4.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    </head>
+  
+    <body>
+        <section>
+        <div class="conteiner">
+              <header>
+                   <nav>
+                        <a href="index.html">Cerrar Sesion</a>   
+                   </nav>
+           </header>
+           <div class="pantalla">
+               <div class="titulo">
+                <div class="logo">
+                  <img src="img/logo.2.png" style="width:35%">
+                </div>
+               </div>
+            </div>
+            <br> 
+            <br>
+            <br>
+           
+            <div class="personajeBonito">
+              <img src="img/CuintliSinFondo.png" width="100%" height=auto> 
+            </div>
+             <div class="personajeBonito2">
+              <img src="img/MixiSinFondo.png" width="100%" height=auto> 
+            </div>
+            <h1 style="font-family: 'Raleway', sans-serif; color:#fff; text-align: center; width: 75%;">Estas son las estadisticas!</h1>
+            <br>
+            <br>  
+            <div class="texto" >
+                <canvas id="Grafica" width="100" height="100"></canvas>
+                  
+            </div>
+            <br>
+            <br>
+            <input type="submit" value="Regresar" class="boton" onclick="location.href = 'Principal.html'">
+        </div>
+                
+  </section>
+  <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                 
+            </div>
+   </body>
+    <script type="text/javascript">
+        let miCanvas=document.getElementById("Grafica").getContext("2d");
+
+        var chart= new Chart(miCanvas,{
+            type:"pie",
+            data:{
+                labels:["Calificación 10","Calificación 9","Calificación 8","Calificación 7","Calificación 6"],
+                datasets:[{
+                  label:"Calificaciones de los Alumnos",
+                  backgroundColor: ["#F2B705","#FF665A","#506AD4","#A6BF4B","#003F63"],
+                  data:[5,10,15,2,2]
+                }]
+            },
+          options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: 'top',
+            },
+            title: {
+              display: true,
+              text: 'Calificaciones'
+            }
+           }
+          }  
+        })
+    </script>
+<style>
+ 
+    
+   .pantalla{
+      
+    background: url('img/Cala.jpeg') no-repeat center; 
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60%;
+    overflow: hidden;
+    position: relative;
+    font-size: 35px;
+    font-family: Century Gothic;
+    color: #fff;
+    text-align: center;
+   } 
+   
+ 
+ 
+
+    
+ 
+
+</style>
+</html>
