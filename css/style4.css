@@ -17,7 +17,7 @@ nav{
     float:right;
     text-decoration: none;
     line-height:120px;
-    width:25%;
+    width:40%;
     
 }
 nav a{
@@ -306,7 +306,7 @@ body{
     }
     
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 750px){
     nav a{
         font-size:80%;
         padding: 5%;

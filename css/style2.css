@@ -44,7 +44,6 @@ body{
 .Inicio{ 
     display: inline-block;
     text-align: center;
-	width: 27%;
     position: absolute;
     text-align: center;
 	left:58%;
@@ -224,7 +223,7 @@ nav ul li{
     }
     
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 750px){
     .titulo{
         width:100%;
         position: relative;
