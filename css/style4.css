@@ -306,3 +306,33 @@ body{
     }
     
 }
+@media screen and (max-width: 400px){
+    nav a{
+        font-size:80%;
+        padding: 5%;
+        margin: 0;
+    }
+    .pantalla{
+        height: 100%;
+    }
+    .boton{
+        font-size: 90%;
+        width:90%;
+        height: 80%;
+    }
+    h1{
+        font-size: 200%;
+    }
+    .personajeBonito{
+        height: 50%;
+        width: 30%;
+    }
+    .personajeBonito2{
+        height: 50%;
+        width: 30%;
+    }
+    .texto{
+        height: 100%;
+        width: 100%;
+    }
+}

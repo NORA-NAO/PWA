@@ -18,15 +18,16 @@ nav{
     float:right;
     text-decoration: none;
     line-height:120px;
-    width:25%;
+    width:30%;
     
 }
 nav a{
-    padding: 5%;
+    padding: 2%;
+    width: 10%;
     border-radius:5%;
     text-decoration: none;
     font-family:Helvetica;
-    font-size: 150%;
+    font-size: 130%;
     letter-spacing: 2%;
     font-size:170%;
     position: static;
@@ -41,7 +42,7 @@ nav a:hover{
 }
 
 .container{ 
-	
+	width: 100%;
 	justify-content: center;
 	align-items: center;
     font-family: Century Gothic;
@@ -62,7 +63,8 @@ h1{
     padding:4% 4% ;
     letter-spacing: 2px;
     font-size:500%;
-     
+    font-family: 'Raleway', sans-serif;
+    color:#fff;"
      
 }
  
@@ -74,6 +76,7 @@ h1{
 .logo{
     animation: movimiento 3s linear infinite;
 }
+
  .boton{ 
      
      border: none;
@@ -90,6 +93,7 @@ h1{
      background-image: linear-gradient(to left, #12CBC4,#0652DD,#12CBC4);
      background-size: 200%;
      transition: 0.6s;
+}
 }
 .boton:hover{
      background-position:right;
@@ -207,7 +211,7 @@ body{
 
 
 .box div:nth-child(12){
-    top:110%;
+    top:100%;
     left: 90%;
     animation: animate 15s linear infinite;
     
@@ -229,26 +233,26 @@ body{
 }
 
 .box div:nth-child(15){
-    top:175%;
+    top:135%;
     left: 90%;
     animation: animate 5s linear infinite;
     
 }
 .box div:nth-child(16){
-    top:185%;
+    top:115%;
     left: 20%;
     animation: animate 9s linear infinite;
     
 }
 
 .box div:nth-child(17){
-    top:190%;
+    top:150%;
     left: 50%;
     animation: animate 5s linear infinite;
     
 }
 .box div:nth-child(18){
-    top:175%;
+    top:145%;
     left: 40%;
     animation: animate 18s linear infinite;
     
@@ -256,14 +260,14 @@ body{
 
 
 .box div:nth-child(19){
-    top:192%;
+    top:142%;
     left: 90%;
     animation: animate 15s linear infinite;
     
 }
 
 .box div:nth-child(20){
-    top:165%;
+    top:155%;
     left: 80%;
     animation: animate 10s linear infinite;
     
@@ -307,4 +311,34 @@ body{
         opacity: 1;
     }
     
+}
+@media screen and (max-width: 400px){
+    nav a{
+        font-size:90%;
+        padding: 5%;
+        margin: 0;
+    }
+    .pantalla{
+        height: 100%;
+    }
+    .boton{
+        font-size: 90%;
+        width:90%;
+        height: 80%;
+    }
+    h1{
+        font-size: 200%;
+    }
+    .personajeBonito{
+        height: 50%;
+        width: 30%;
+    }
+    .personajeBonito2{
+        height: 50%;
+        width: 30%;
+    }
+    .texto{
+        height: 100%;
+        width: 100%;
+    }
 }
