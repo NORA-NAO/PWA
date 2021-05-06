@@ -1,0 +1,15 @@
+{
+  "name": "Calabozos y Medallas",
+  "short_name": "CyM",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FBFFA8",
+  "description": "La poderosisima pagina web de Calabozos y Medallas",
+  "icons": [
+    {
+      "src": "img/Imagen1.png",
+      "sizes": "181x181",
+      "type": "image/png"
+    }
+  ]
+}
